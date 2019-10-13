@@ -16,5 +16,5 @@ CREATE TABLE Tasks {
 id SERIAL NOT NULL PRIMARY KEY,
 course_name INT NOT NULL REFERENCES Udemy(id),
 project_name INT NOT NULL REFERENCES Projects(id),
-certificate_name INT NOT NULL REFERENCES Certificates(id),
+certificate_name INT NOT NULL REFERENCES Certificates(id)
 } 
