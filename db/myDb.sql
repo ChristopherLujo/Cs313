@@ -1,0 +1,20 @@
+CREATE DATABASE tasks;
+
+CREATE TABLE Udemy {
+id SERIAL NOT NULL PRIMARY KEY,
+course_name VARCHAR(100) NOT NULL};
+
+CREATE TABLE Projects {
+id SERIAL NOT NULL PRIMARY KEY,
+project_name VARCHAR(100) NOT NULL};
+
+CREATE TABLE Certificates {
+id SERIAL NOT NULL PRIMARY KEY,
+certifiicate_name VARCHAR(100) NOT NULL};
+
+CREATE TABLE Tasks {
+id SERIAL NOT NULL PRIMARY KEY,
+course_name INT NOT NULL REFERENCES Udemy(id),
+project_name INT NOT NULL REFERENCES Projects(id),
+certificate_name INT NOT NULL REFERENCES Certificates(id),
+} 
