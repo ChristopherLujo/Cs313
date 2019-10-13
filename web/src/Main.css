@@ -1,0 +1,105 @@
+.phppp {
+  background-color: ivory;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 100px;
+}
+
+.introoo {
+  font-family: 'Mansalva', cursive;
+  text-align: center;
+}
+
+.fromhere {
+  text-align: center;
+  font-family: 'Turret Road', cursive;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 500px 100px;
+  justify-content: center;
+  padding: 1px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.title1 { 
+    display: block;
+    font-size: 3.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+   
+  }
+
+.me {
+  margin-top: 550px;
+  transform: rotate(90deg);
+
+}
+
+a:hover {
+  background-color: tan;
+}
+
+.titleabout {
+  text-align: center;
+  font-size: 2.0em;
+  margin-top: 0%;
+}
+.wedding{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.intro {
+  text-align: center;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.inlove {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: url("http://i.stack.imgur.com/jGlzr.png");
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(3, 53, 109);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #999;
+  }
+  
+  .active {
+    background-color: rgb(198, 213, 223);
+  }
