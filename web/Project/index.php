@@ -16,7 +16,7 @@ $db = get_db();
 
 <?php
 
-$statement = $db->prepare("SELECT course_name, course_instructor  FROM Udemy");
+$statement = $db->prepare("SELECT course_name, course_instructor  FROM udemy");
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
