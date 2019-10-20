@@ -11,7 +11,7 @@ project_name VARCHAR(100) NOT NULL);
 
 CREATE TABLE certificates (
 id SERIAL NOT NULL PRIMARY KEY,
-certifiicate_name VARCHAR(100) NOT NULL);
+certificate_name VARCHAR(100) NOT NULL);
 
 CREATE TABLE tasks (
 id SERIAL NOT NULL PRIMARY KEY,
@@ -28,5 +28,4 @@ INSERT INTO projects (project_name)
 
 INSERT INTO certificates (certificate_name)
     VALUES ('Google Analytics Individual Qualification');  
-
 
