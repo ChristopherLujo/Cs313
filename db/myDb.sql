@@ -1,32 +1,32 @@
 CREATE DATABASE tasks;
 
-CREATE TABLE Udemy {
+CREATE TABLE udemy (
 id SERIAL NOT NULL PRIMARY KEY
 , course_name VARCHAR(100) NOT NULL
-, course_instructor VARCHAR(100) NOT NUll};
+, course_instructor VARCHAR(100) NOT NUll);
 
-CREATE TABLE Projects {
+CREATE TABLE projects (
 id SERIAL NOT NULL PRIMARY KEY,
-project_name VARCHAR(100) NOT NULL};
+project_name VARCHAR(100) NOT NULL);
 
-CREATE TABLE Certificates {
+CREATE TABLE certificates (
 id SERIAL NOT NULL PRIMARY KEY,
-certifiicate_name VARCHAR(100) NOT NULL};
+certifiicate_name VARCHAR(100) NOT NULL);
 
-CREATE TABLE Tasks {
+CREATE TABLE tasks (
 id SERIAL NOT NULL PRIMARY KEY,
-course_name INT NOT NULL REFERENCES Udemy(id),
-project_name INT NOT NULL REFERENCES Projects(id),
-certificate_name INT NOT NULL REFERENCES Certificates(id)};
+course_name INT NOT NULL REFERENCES udemy(id),
+project_name INT NOT NULL REFERENCES projects(id),
+certificate_name INT NOT NULL REFERENCES certificates(id));
 
 
-INSERT INTO Udemy (course_name, course_instructor)
+INSERT INTO udemy (course_name, course_instructor)
     VALUES ('The Web Developer Bootcamp', 'Colt Steele');
 
-INSERT INTO Projects (project_name)
+INSERT INTO projects (project_name)
     VALUES ('FizzBuzz JavaScript Coding Challenge');
 
-INSERT INTO Certificates (certificate_name)
+INSERT INTO certificates (certificate_name)
     VALUES ('Google Analytics Individual Qualification');  
 
 

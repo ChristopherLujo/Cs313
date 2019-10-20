@@ -2,7 +2,7 @@
 function get_db() {
 
 	try {
-		
+
 		$dbUrl = getenv('DATABASE_URL');
 
         $dbopts = parse_url($dbUrl);
@@ -12,7 +12,7 @@ function get_db() {
 		$dbUser = $dbopts["user"];
 		$dbPassword = $dbopts["pass"];
 		$dbName = ltrim($dbopts["path"],'/');
-		// Create the PDO connection
+	
 		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
         $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         return $db;
