@@ -1,6 +1,6 @@
 <?php
 
-require "ConnectDB.php";
+require "connectDB.php";
 $db = get_db();
 ?>
 <!DOCTYPE html>
