@@ -11,7 +11,7 @@ project_name VARCHAR(100) NOT NULL);
 
 CREATE TABLE certificates (
 id SERIAL NOT NULL PRIMARY KEY,
-certificate_name VARCHAR(100) NOT NULL);
+certificates_name VARCHAR(100) NOT NULL);
 
 CREATE TABLE tasks (
 id SERIAL NOT NULL PRIMARY KEY,
@@ -26,6 +26,11 @@ INSERT INTO udemy (course_name, course_instructor)
 INSERT INTO projects (project_name)
     VALUES ('FizzBuzz JavaScript Coding Challenge');
 
-INSERT INTO certificates (certificate_name)
+INSERT INTO certificates (certificates_name)
     VALUES ('Google Analytics Individual Qualification');  
 
+CREATE USER viewer_user WITH PASSWORD 'view';
+GRANT SELECT, INSERT, UPDATE ON udemy TO viewer_user;
+GRANT SELECT, INSERT, UPDATE ON projects TO viewer_user;
+GRANT SELECT, INSERT, UPDATE ON certificates to viewer_user;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO viewer_user;
