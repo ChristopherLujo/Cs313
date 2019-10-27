@@ -5,6 +5,11 @@ function get_db() {
 
 		$dbUrl = getenv('DATABASE_URL');
 
+		if (!isset($dbUrl) || empty($dbUrl)) {
+			// example localhost configuration URL with user: "ta_user", password: "ta_pass"
+			// and a database called "scripture_ta"
+			$dbUrl = "postgres://viewer_user:view@localhost:5432/tasks";
+
         $dbopts = parse_url($dbUrl);
         
 		$dbHost = $dbopts["host"];

@@ -12,9 +12,9 @@
 *   the resulting list.
 ***********************************************************/
 // get the data from the POST
-$projects = $_POST['projects'];
+$projects = $_POST['project'];
 $udemy= $_POST['udemy'];
-$certificate = $_POST['certificates'];
+$certificate = $_POST['certificate'];
 $projectsids = $_POST['chkTopics'];
 // For debugging purposes, you might include some echo statements like this
 // and then not automatically redirect until you have everything working.
@@ -23,7 +23,7 @@ $projectsids = $_POST['chkTopics'];
 // echo "verse=$verse\n";
 // echo "content=$content\n";
 // we could (and should!) put additional checks here to verify that all this data is actually provided
-require("dbConnect.php");
+require("connectDB.php");
 $db = get_db();
 try
 {
