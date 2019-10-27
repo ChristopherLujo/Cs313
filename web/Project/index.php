@@ -6,7 +6,7 @@
 * Description: This file retrieves the scriptures and topics
 * from the DB.
 ***********************************************************/
-require("ConnectDB.php");
+require("connectDB.php");
 $db = get_db();
 ?>
 <!DOCTYPE html>
