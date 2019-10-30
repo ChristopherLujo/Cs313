@@ -19,11 +19,11 @@ $db = get_db();
 	<input type="project" id="project" name="project">
 	<label for="project">Project:</label>
 
-	<input type="udemy" id="udemy" name="udemy">
+	<!-- <input type="udemy" id="udemy" name="udemy">
 	<label for="udemy">Udemy Courses:</label>
 
 	<input type="certificate" id="certificate" name="certificate">
-	<label for="certificate">Certificates:</label>
+	<label for="certificate">Certificates:</label> -->
 
 	<label>Courses:</label><br />
 
